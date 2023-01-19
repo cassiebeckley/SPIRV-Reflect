@@ -83,7 +83,7 @@ enum {
 
 // clang-format off
 typedef struct SpvReflectPrvArrayTraits {
-  uint32_t                        element_type_id;
+      uint32_t                        element_type_id;
   uint32_t                        length_id;
 } SpvReflectPrvArrayTraits;
 // clang-format on
