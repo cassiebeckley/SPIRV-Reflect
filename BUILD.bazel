@@ -25,11 +25,12 @@ COPTS_DEFAULT = [
     "-ffunction-sections",
     "-fdata-sections",
 
-    "-Werror",
-    "-Wswitch",
-    "-Wimplicit-fallthrough",
-    "-Wunused-variable",
-]
+        "/Wall",
+        "/WX",
+    ],
+    "//conditions:default": [
+        "-ffunction-sections",
+        "-fdata-sections",
 
 COMMON_COPTS = select({
     "@bazel_tools//src/conditions:windows": COPTS_WINDOWS,
